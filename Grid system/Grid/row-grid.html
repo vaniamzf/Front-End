@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Rows GRID</title>
+    <style>
+		body{
+			color: #fff;
+			font-family: 'Helvetica';
+			text-align: center;
+		}
+		#content{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			/*grid-auto-rows: minmax(150px, auto);*/
+			grid-template-rows: repeat(3, minmax(150px, auto));
+			/*grid-row-gap: 10px;
+			grid-column-gap: 10px;*/
+			grid-gap: 10px;
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		#content div{
+			background: #a56dda;
+			padding: 30px;
+		}
+		#content div:nth-child(even){
+			background: #fac24a;
+			padding: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="content">
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+
+	</div>
+
+</body>
+</html>
