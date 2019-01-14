@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Floating Element</title>
+    <style>
+    body {
+        background-color: pink;
+    }
+    .wrapper {
+        background-color: #fff;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .wrapper:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .services:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .content {
+            padding: 10px;
+            clear: both;
+            margin-top: 0px;
+    }
+    .service{
+			text-align: center;
+			float: left;
+			background: #eee;
+			width: 29.33%;
+			padding: 1%;
+			margin: 1%;
+			height: 140px;
+    }
+    .service h2, .service p{
+			color: #999;
+		}
+    section, aside{
+			float: left;
+			width: 45%;
+			margin: 1%;
+			padding: 1%;
+			background-color: #f2f2f2;
+		}
+		.columns:after{
+			content: "";
+			display: block;
+			clear: both;
+    }  
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+    <div class="services">
+			<div class="service">
+				<h2>Service 1</h2>
+				<p>This is Service 1</p>
+			</div>
+			<div class="service">
+				<h2>Service 2</h2>
+				<p>This is Service 2</p>
+			</div>
+			<div class="service">
+				<h2>Service 3</h2>
+				<p>This is Service 3</p>
+			</div>
+		</div>
+    <div class="content">
+           <h2>Content</h2>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequuntur ea, libero corporis ad
+               asperiores incidunt dicta, vero possimus minima laborum. Placeat minus, harum pariatur ipsam dolore
+               quas tempora eius soluta omnis possimus molestias officiis maxime similique. Assumenda quis doloribus
+               error est facilis sunt sequi illum exercitationem a? Velit sit sequi eos quia cum, quae iste ipsam!
+               Tenetur veritatis culpa voluptatem corporis quaerat ab repudiandae quod, libero cupiditate repellendus
+               nam, cum eligendi minima doloribus? Laborum beatae voluptate inventore, saepe velit obcaecati
+               perferendis rem, at iste, odio maiores deserunt deleniti veritatis animi dolor sit tempora tempore?
+               Quibusdam necessitatibus eum inventore eos.</p>
+       </div>
+       <div class="columns">
+            <section>
+                <h2>This is Column 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum corporis vitae asperiores
+                    doloribus fugiat, reiciendis cumque possimus, eum numquam impedit dicta voluptate neque dolor, ex
+                    maxime voluptatem deleniti expedita perferendis hic. Sit nisi veritatis non qui quibusdam, corporis
+                    fugiat dolores consequatur quae neque accusamus nesciunt magnam vel, nostrum laudantium culpa.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum corporis vitae asperiores
+                    doloribus fugiat, reiciendis cumque possimus, eum numquam impedit dicta voluptate neque dolor, ex
+                    maxime voluptatem deleniti expedita perferendis hic. Sit nisi veritatis non qui quibusdam, corporis
+                    fugiat dolores consequatur quae neque accusamus nesciunt magnam vel, nostrum laudantium culpa.</p>
+            </section>
+            <aside>
+                <h2>This is column 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum corporis vitae asperiores
+                    doloribus fugiat, reiciendis cumque possimus, eum numquam impedit dicta voluptate neque dolor, ex
+                    maxime voluptatem deleniti expedita perferendis hic. Sit nisi veritatis non qui quibusdam, corporis
+                    fugiat dolores consequatur quae neque accusamus nesciunt magnam vel, nostrum laudantium culpa.</p>
+                <img src="artworks-000355995855-vflj2q-t500x500.jpg"
+                    width="100%">
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>
