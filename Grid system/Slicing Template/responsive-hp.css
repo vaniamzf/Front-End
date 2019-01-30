@@ -1,0 +1,521 @@
+/*responsive hp*/
+@media screen and (max-width: 422px) {
+
+/* Global Styles */
+body{
+    overflow-x: hidden;
+}
+a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+p, h5{
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 0;
+    color: #5a5a5a;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #5a5a5a;
+    display: inline-block;
+    padding-bottom: 20px;
+    position: relative;
+}
+.o_s h2:before, .detail h2:before, .news h2:before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 2px solid #ED145B;
+    left: 10%;
+}
+.download h2:before, .about h2:before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 2px solid #ED145B;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #5a5a5a;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.download h3:before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 2px solid #ED145B;
+}
+.header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+}
+.header h1:before, .a_ii h2:before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid #ED145B;
+}
+
+.tags{
+
+    padding: 5px 5px;
+    background-color: #e3e3e3;
+    max-width: 120px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: -15px;
+    text-align: center;
+}
+
+.btn-default{
+    border-radius: 15px;
+    background-color: #ED145B;
+    padding: 5px 25px;
+    border: none;
+    color: white;
+}
+
+.btn-default:hover{
+    color: #ED145B ;
+    background-color: white ;
+}
+
+
+/* Global Styles END*/
+
+/* Navigation START*/
+.navbar{
+    background: transparent;
+    background-color: transparent;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+    .navbar ul li a{
+        color: #ffffff;
+    }
+
+    .navbar-nav > li > a:hover{
+        color: #ED145B;
+        background: none;
+    }
+    .navbar-toggle .icon-bar {
+        background-color: white;
+    }
+    .navbar-toggle:hover {
+        background-color: #ED145B;
+    }
+/* Header END */
+
+/* Header START */
+.jumbotron{
+    background: url('../img/banner.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 225px 0px;
+    margin: 0px;
+}
+    .jumbotron .row{
+        padding: 10px;
+    }
+    .jumbotron p{
+        color: white;
+    }
+
+    .red{
+        position:absolute;
+        width: 100%;
+        height: 0;
+        content: '';
+        border-top: 30px solid #ED145B;
+        border-right: 8px solid green;
+        z-index: 500;
+        top: 100%;
+        margin-top: -100px;
+        overflow: hidden;
+    }
+    .design{
+        font-size: 0px;
+        line-height: 0%;
+        width: 100%;
+        border-top: 20px solid #ed145b;
+        border-right: 2000px solid transparent;
+        margin-bottom: -15px;
+        position: absolute;
+    }
+
+/* Header END */
+
+/* About START */
+.about{
+    background-color: #f4f4f4;
+    padding: 110px 0;
+}
+
+    .overlay{
+        color:#fff;
+        position:absolute;
+        z-index:12;
+        top: 0px;
+        left:0;
+        width: 100%;
+        text-align:center;
+        margin-right: -100px;
+    }
+    .play{
+        color: #ED145B;
+    }
+    .play:hover{
+        text-decoration: none;
+        color: #000;
+    }
+    .about .mac{
+        float: right;
+    }
+    .about .description{
+        float: left;
+    }
+@media (max-width: 800px) {
+    .about .mac{
+        float: none;
+    }
+    .about .description{
+        float: none;
+    }
+}
+/* About END */
+
+/* Our Services START */
+.o_s{
+    text-align: center;
+    padding: 120px;
+}
+    .o_s .description{
+        padding: 40px 230px;
+    }
+    .o_s .pads{
+        padding-top: 40px;
+    }
+
+    .o_s ul li a{
+        line-height: 100px;
+        text-align: center;
+    }
+    .o_s ul li{
+        width: 120px;
+        height: 120px;
+        border: solid #c8c8c8;
+        border-radius: 50%;
+        margin: 0 60px;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s ;
+    }
+    .o_s li:hover{
+        background-color: #ED145B;
+    }
+@media (max-width: 800px) {
+    .o_s{
+        padding: 120px  0px;
+    }
+    .o_s .description{
+        padding: 40px 0;
+    }
+    .o_s ul li{
+        width: 120px;
+        height: 120px;
+        border: solid #c8c8c8;
+        border-radius: 50%;
+        margin: 0px;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s ;
+    }
+
+}
+/* Our Services END */
+
+/* Quotes START */
+.quotes{
+    background-image: url("../img/bg-carosowl.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+    .qut{
+        padding: 100px 0;
+    }
+
+    .qut p{
+        padding: 50px 100px;
+        font-size: 25px;
+        color: white;
+    }
+    @media (max-width: 800px) {
+        .qut{
+            padding: 0 10px;
+        }
+        .qut p{
+            padding: 50px 20px;
+        }
+    }
+/* Quotes START */
+
+/* Check Your Prices START */
+.prizes{
+    background-color: #f4f4f4;
+    padding: 140px;
+    text-align: center;
+}
+    .thumbnail{
+        border: none;
+    }
+    .detail{
+        padding-bottom: 20px;
+    }
+    .price{
+        background-color: #5a5a5a;
+        padding: 30px;
+        color: white;
+    }
+    .price p, .price h2{
+        color: white;
+    }
+    .price:hover{
+        background-color: #ED145B;
+    }
+    .thumbnail{
+        text-align: center;
+    }
+    .thumbnail h2, .thumbnail p{
+        display: inline;
+    }
+    .thumbnail button{
+        margin: 36px 0px;
+        color: white;
+    }
+
+    .pack{
+        padding-top:10px;
+    }
+
+@media (max-width: 800px) {
+    .price{
+        padding: 30px 0;
+    }
+    .prizes{
+        padding: 10px 0;
+    }
+}
+/* Check Your Prices END */
+
+/* Additional Info START*/
+.a_i{
+    padding: 130px 0;
+}
+    .a_i .ic{
+        padding-top: 10px;
+        text-align: right;
+    }
+    .a_i .elements{
+        margin: 10px 0px;
+    }
+    .a_i h5{
+        color: #ED145B;
+    }
+    .a_i p{
+        color: #686868;
+        font-size: 13px;
+    }
+    .elements:hover img, .elements:hover h5{
+        background-color: #ED145B;
+        color: white;
+        border-radius: 10px;
+    }
+    .elements:hover h5{
+        border-radius: 0px;
+    }
+    /*.elements:hover{
+        box-shadow: 0px 5px 5px 0px rgba(237, 20, 91, 0.5);
+    }*/
+/* Additional Info END*/
+
+/* Join Us START */
+.joinus{
+
+    padding: 70px 0;
+    background-color: #ED145B;
+    color: white !important;
+    text-align: center;
+}
+    .joinus h2, .joinus button{
+        display: inline;
+        color: white;
+        font-style: normal;
+    }
+    .joinus b{
+
+        font-weight: bolder;
+    }
+    .joinus button{
+
+        padding: 10px 70px;
+        border-radius: 40px;
+        background-color: white;
+        color: #ED145B;
+    }
+    .joinus button:hover{
+        background-color: #ED145B ;
+        color: white ;
+    }
+/* Join Us END */
+
+/* News START */
+.news{
+    padding: 140px 0;
+    text-align: center;
+}
+    .container2{
+        margin: 10px;
+        background-color: #f4f4f4;
+        text-align: left;
+    }
+    .container2 .thumbnail{
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .news a{
+        padding-top: 20px;
+    }
+    .text{
+        padding: 10px;
+    }
+    .report{
+        text-align: center;
+        padding: 0 220px;
+        padding-bottom: 100px;
+    }
+    .gal {
+        position:relative;
+        overflow:hidden;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cap {
+        position:absolute;
+        top:0;
+        right:0;
+        background:rgba(237, 20, 91, 0.75);
+        width:100%;
+        height:100%;
+        display: none;
+        text-align: center;
+        color:#fff !important;
+        z-index:2;
+
+    }
+    .news span{
+        padding: 20%;
+        font-size: 50px;
+        text-align: center;
+    }
+    .news .thumbnail .design {
+        border-top: unset;
+        font-size: 0px;
+        line-height: 0%;
+        width: 100%;
+        border-bottom: 12px solid #ed145b;
+        border-right: 350px solid transparent;
+        margin: -11px;
+        position: absolute;
+    }
+@media (max-width: 800px) {
+    .report{
+        padding: 0px 10px;
+    }
+}
+/* News END */
+/* Aditional Info 2 START */
+.a_ii{
+    background: url("../img/bg-carosowl.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+    padding: 145px 0px;
+
+}
+.a_ii h2, .a_ii p{
+    color: white !important;
+}
+
+.a_ii .row {
+    padding: 15px;
+}
+.a_ii button:hover{
+    color: #ED145B;
+}
+@media (max-width: 800px) {
+    .description2{
+        padding: 0px 20px;
+    }
+}
+/* Aditional Info 2 END */
+
+/* Download Now START */
+.download{
+    background-color: #f4f4f4;
+    padding: 140px 0px;
+}
+.dn{
+    padding-top: 75px;
+}
+.dn button{
+    color: white;
+}
+/* Download Now END */
+
+/* Footer START */
+.footer{
+    background-color: #2b2b2b;
+    padding: 60px 0;
+}
+.footer p{
+    color: white;
+}
+/* Footer END */
