@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Siblings</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>Belajar</li>
+		<li>html</li>
+		<li class="css">CSS</li>
+		<li>jquery</li>
+		<li>php</li>
+		<li id="db">database</li>
+	</ul>
+
+	<script>
+		jQuery(document).ready(function($) {
+			$('.css').siblings().css('fontSize', '20px');
+			//$('.css').next().css('color', 'red');
+			// $('.css').nextAll().css('color', 'red');
+			$('.css').nextUntil('#db').css('color', 'red');
+			
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tambah dan Hapus</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Halo</h1>
+    <div id="box1">Box 1</div>
+    <div class="boxwrap">
+        <div class="boxes">Baris pertama</div>
+        <div class="boxes">Baris kedua</div>
+        <div class="boxes">Baris ketiga</div>
+    </div>
+    
+    <form action="">
+            <input type="text" id="inputText">
+            <input type="submit">
+    </form>
+    <script>
+
+        jQuery(document).ready(function($){
+
+            $('h1').click(function(event){
+                $('h1').css('color','red');
+            });
+
+            $('h1').mouseenter(function(event){
+                $('h1').css('color', 'yellow');                
+            });
+
+            $('h1').mouseleave(function(event){
+                $('h1').css('color', 'green');
+            });
+
+            $('.boxes').mouseenter(function(event){
+                $(this).css('color', 'blue');
+            });
+
+            $('form').submit(function(event) {
+				var tulisan = $('#inputText').val();
+				$('h1').text(tulisan);
+				event.preventDefault();
+			});
+            
+        });
+	</script>	
+</body>
+</html>

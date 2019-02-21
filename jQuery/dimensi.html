@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dimensi</title>
+
+    <style>
+            .boxwrap{
+                background-color: grey;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                margin: 10px;
+                border:5px solid black;    
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+        <h1>Halo</h1>
+        <div id="box1">Box 1</div>
+        <div class="boxes">Baris pertama</div>
+        <div class="boxes">Baris kedua</div>
+        <div class="boxes">Baris ketiga</div>
+    </div>
+    <script>
+            //---------AMBIL DIMENSI--------------
+		    //width -> konten
+		    //innerWidth -> konten + padding
+		    //outerWidth -> konten + padding + border
+            //(true) -> +margin
+		    //---------UBAH DIMENSI----------------
+		    //1. width, height
+		    //2. css
+		    jQuery(document).ready(function($) {
+			    //AMBIL
+			    // var dimensi = $('.boxwrap').width();
+			    // var dimensi = $('.boxwrap').innerWidth();
+			    // var dimensi = $('.boxwrap').outerWidth();
+			    // var dimensi = $('.boxwrap').outerWidth(true);
+			    // $('h1').text(dimensi);
+			    //UBAH
+			    // $('.boxwrap').width(120).height(120);
+		    });
+	</script>	
+</body>
+</html>
