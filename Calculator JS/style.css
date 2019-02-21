@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+}
+
+.button {
+    transition: box-shadow 0.1s ease-in-out,
+                color 0.1s ease-in-out;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    padding: 0;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 14pt;
+}
+
+.button:hover {
+    box-shadow: 0 0 5px #026;
+    color: white;
+}
+
+#display {
+    display: block;
+    width: 362px;
+    height: 1em;
+    margin: 1em auto;
+    padding: 1em;
+    font-size: large;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #444;
+    text-align: right;
+}
+
+.keypad {
+    display: flex;
+    flex-flow: row;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+.numpad {
+    display: flex;
+    flex-flow: row wrap;
+    width: 75%;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.numpad div {
+    width: 32%;
+    flex: 0 0 auto;
+    background-color: #ccc;
+}
+
+#bs {
+    background-color: #c78;
+}
+
+
+.opers {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.opers div {
+    height: auto;
+    flex: 1 0 auto;
+}
+
+.oper {
+    background-color: #0cf;
+}
+
+#cls {
+    background-color: #ca2;
+}
+
+#eval {
+    background-color: #4ca;
+}
